@@ -1,0 +1,151 @@
+{
+  "3": {
+    "inputs": {
+      "seed": 239450199062566,
+      "steps": 30,
+      "cfg": 3.96,
+      "sampler_name": "dpmpp_2m_sde_gpu",
+      "scheduler": "karras",
+      "denoise": 1,
+      "model": [
+        "32",
+        0
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "latent_image": [
+        "5",
+        0
+      ]
+    },
+    "class_type": "KSampler"
+  },
+  "4": {
+    "inputs": {
+      "ckpt_name": "xxmix9realisticsdxl_v10.safetensors"
+    },
+    "class_type": "CheckpointLoaderSimple"
+  },
+  "5": {
+    "inputs": {
+      "width": 768,
+      "height": 1024,
+      "batch_size": 1
+    },
+    "class_type": "EmptyLatentImage"
+  },
+  "6": {
+    "inputs": {
+      "text": "a man, male,\nextra long, Straight, Shaggy cut hair, Pink hair,\nmuscle, Overshirt, Sweat Shorts, Athletic Shoes, pin,Bangle,Necklace,Anklet,",
+      "clip": [
+        "32",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "7": {
+    "inputs": {
+      "text": "(worst quality, low quality, illustration, 3d, 2d, painting, cartoons, sketch), tooth, open mouth, bad hand, helmet reflection, look at viewer",
+      "clip": [
+        "32",
+        1
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "8": {
+    "inputs": {
+      "samples": [
+        "3",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "9": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "SaveImage"
+  },
+  "10": {
+    "inputs": {
+      "enabled": true,
+      "swap_model": "inswapper_128.onnx",
+      "facedetection": "retinaface_resnet50",
+      "face_restore_model": "GFPGANv1.4.pth",
+      "detect_gender_source": "no",
+      "detect_gender_input": "no",
+      "source_faces_index": "0",
+      "input_faces_index": "0",
+      "console_log_level": 1,
+      "source_image": [
+        "11",
+        0
+      ],
+      "input_image": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "ReActorFaceSwap"
+  },
+  "11": {
+    "inputs": {
+      "image": "IMG_1578 (11).JPG",
+      "upload": "image"
+    },
+    "class_type": "LoadImage"
+  },
+  "12": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "10",
+        0
+      ]
+    },
+    "class_type": "SaveImage"
+  },
+  "30": {
+    "inputs": {
+      "stop_at_clip_layer": -2,
+      "clip": [
+        "4",
+        1
+      ]
+    },
+    "class_type": "CLIPSetLastLayer"
+  },
+  "32": {
+    "inputs": {
+      "lora_name": "xl_more_art-full_v1.safetensors",
+      "strength_model": 0.6,
+      "strength_clip": 0.8,
+      "model": [
+        "4",
+        0
+      ],
+      "clip": [
+        "30",
+        0
+      ]
+    },
+    "class_type": "LoraLoader"
+  }
+}

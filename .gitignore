@@ -1,0 +1,14 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyw
+*.pyz
+*.pyzw
+*.pydevproject
+
+input/

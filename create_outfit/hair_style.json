@@ -1,0 +1,66 @@
+{
+    "hair_style": {
+        "lenght": [
+            "short",
+            "pixel cut",
+            "medium",
+            "long",
+            "extra long",
+            "absurdly long"
+        ],
+        "hair texture":[
+            "Straight",
+            "Wavy",
+            "Perm",
+            "Curly",
+            "Pin curls",
+            "Wavy curls",
+            "Crimped"
+        ],
+        "hair cut":[
+            "Bob",
+            "Fluffy",
+            "Bowl cut",
+            "Blunt cut",
+            "Forhead",
+            "Pixie cut",
+            "Layered cut",
+            "Shaggy cut",
+            "Mullet",
+            "French Braid",
+            "Ponytail",
+            "Pigtails",
+            "Bun"
+        ],
+        "hair color":[
+            "Black",
+            "Brown",
+            "Blonde",
+            "Red",
+            "Orange",
+            "White",
+            "Grey",
+            "Blue",
+            "Green",
+            "Purple",
+            "Pink",
+            "Platinum",
+            "Silver"
+        ],
+        "inner color":[
+            "Black",
+            "Brown",
+            "Blonde",
+            "Red",
+            "Orange",
+            "White",
+            "Grey",
+            "Blue",
+            "Green",
+            "Purple",
+            "Pink",
+            "Platinum",
+            "Silver"
+        ]
+    }
+}
