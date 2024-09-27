@@ -11,7 +11,8 @@ ComfyCam 輕鬆讓你的自拍變成專業照片
 1. 安裝 ComfyUI : https://github.com/comfyanonymous/ComfyUI
 2. 下載 SDXL 模型 : https://civitai.com/models/124421/xxmix9realisticsdxl
 3. 下載 ComfyUI 的 package: https://github.com/Gourieff/comfyui-reactor-node
-4. 使用裡面所提供的 ComfyUI workflow
+4. 下載 ComfyUI Manager： https://github.com/ltdrdata/ComfyUI-Manager
+5. 使用裡面所提供的 ComfyUI workflow
 
 設備限制:
 最好是有一台 8GB 以上的顯卡，否則會有記憶體不足的問題，或花費較長的時間。
